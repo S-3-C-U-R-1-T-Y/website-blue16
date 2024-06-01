@@ -14,5 +14,14 @@
     <p style="text-align:center;">
       <a href=mailto:info@blue16.nl>Contact Blue16</a>
     </p>
+
+    <p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;" id="ip-address"></p>
+    <script>
+    function getIP(json) {
+    document.getElementById("ip-address").innerHTML = json.ip;
+    }
+    </script>
+    <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
   </body>
 </html>
